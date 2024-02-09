@@ -1,0 +1,25 @@
+{
+  "name": "tree-sitter-musashi",
+  "version": "0.1.0",
+  "description": "Treesitter parser for musashi lisp dialect",
+  "main": "bindings/node",
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "parse": "tree-sitter parse",
+    "highlight": "tree-sitter highlight",
+    "test": "tree-sitter test"
+  },
+  "author": "Egor Dergunov",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.musashi",
+      "file-types": [
+        "mu"
+      ]
+    }
+  ]
+}
